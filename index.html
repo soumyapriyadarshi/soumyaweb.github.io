@@ -1,96 +1,66 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soumya Priyadarshi's | Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-             <!-- --------- adding navbar to my portfolio --------- -->
-            <div class="navbar">
-                <div class="light">
-                    <i class="ri-sun-line"></i>
-                </div>
-                <div class="collection">
-                    <div class="home">
-                        <i class="ri-home-line"></i>
-                        <p>Home</p>
-                    </div>
-
-                    <div class="Skills">
-                        <i class="ri-tools-fill"></i>
-                        <p>Skills</p>
-                    </div>
-
-                    <div class="projects">
-                        <i class="ri-stack-fill"></i>
-                        <p>Projects</p>
-                    </div>
-                    <p></p>
-                </div>
-            </div>
-        </header>
-       <main>
-            <!-- --------- adding main content to my portfolio --------- -->    
-            <div class="profile">
-                <img src="image/ChatGPT Image Nov 5, 2025, 09_20_46 AM.png" alt="" id="background">
-                <div class="my_img">
-                    <img src="image/WhatsApp Image 2025-11-05 at 08.14.58.jpeg" alt="">
-                </div>
-                <p>Soumya Priyadarshi Nayak</p>
-
-            <!-- --------- adding social media links --------- -->
-                <div class="social">
-            <!-- --------- Instagram --------- -->
-                    <a href="https://www.instagram.com/_its_soumya_05/" target="_blank">
-                        <i class="ri-instagram-line"></i>
-                        Instagram
-                    </a>
-                
-            <!-- --------- Linkedin --------- -->
-                    <a href="https://www.linkedin.com/in/soumya-priyadarshi-nayak/" target="_blank">
-                        <i class="ri-linkedin-box-line"></i>
-                        Linkkedin
-                    </a>
-                
-            <!-- --------- Facebook --------- -->
-                    <a href="https://www.facebook.com/soumya.priyadarshi.5" target="_blank">
-                        <i class="ri-facebook-circle-line"></i>
-                        Facebook
-                    </a>            
-            <!-- --------- Github --------- -->
-                    <a href="https://github.com/soumyapriyadarshi/soumyapriyadarshi.github.io/" target="_blank">
-                        <i class="ri-github-line"></i>
-                        Github
-                    </a>
-                
-                </div>
-            </div>
-
-            <!-- ----------New box for showing -->
-       </main>
-        
-    </div>
-    
-    <script src="app.js"></script>
-</body>
-=======
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>todos-list</title>
+    <title>Soumya - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- portfolio head section -->
+    <head>
+      <nav>
+        <div class="left">Soumya's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+            <li><a href="/">Resume</a></li>
+          </ul>
+        </div>
+        <div class="dp">
+          <img src="image/DP.jpeg" alt="dp">
+        </div>
+      </nav>
+    </head>
+
+    <!-- portfolio main section -->
+    <main>
+      <!-- first Section -->
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, Myself <span class="color">Soumya Priyadarshi Nayak,</span>
+          <div>
+            <span id="element"></span>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="image/bg.png" alt="Hero Image" />
+        </div>
+      </section>
+      <hr>
+      <!-- Second Section -->
+      <section class="secondSection">
+        Past Experiences
+      </section>
+    </main>
+    <!-- type animation -->
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["AI and ML Developer.", '&amp; Web Developer.', '&amp; Robotics Developer.'],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
->>>>>>> ef0f02c (jobOpeningProject)
 </html>
