@@ -4,26 +4,40 @@
 }
 
 body {
-  background-color: rgb(12, 12, 29);
-  color: white;
+  background-color: var(--background);
+  color: var(--text);
   font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* utility section */
 .color {
-    color: rgb(154, 87, 218);
+  color: var(--primary);
 }
 
 #element {
-  color: rgb(154, 87, 218); 
+  color: rgb(154, 87, 218);
 }
+
+:root {
+  --background: #0B1020;
+  --surface: #151C33;
+  --text: #F4F6FC;
+  --muted: #AAB4CC;
+  --primary: #A78BFA;
+  --accent: #67E8F9;
+}
+/* NavBar */
 
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 60px;
-  background-color: rgb(45, 45, 214);
+  background-color: var(--surface);
 }
 
 nav ul {
@@ -38,13 +52,14 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: var(--text);
   font-size: 1rem;
 }
 
 nav ul li a:hover {
-  color: rgb(24, 15, 41);
+  color: var(--text);
   font-size: 1.2rem;
+  transform: scale(1.2);
 }
 
 .left {
@@ -63,7 +78,6 @@ nav ul li a:hover {
   height: 100%;
   border-radius: 50%;
 }
-
 
 /* first section */
 .firstSection {
@@ -96,7 +110,7 @@ nav ul li a:hover {
 /* line */
 main hr {
   border: 0;
-  background: rgb(154, 87, 218);
+  background: var(--primary);
   height: 1px;
   margin: 40px 84px;
 }
@@ -104,9 +118,20 @@ main hr {
 /* Second Section */
 .secondSection {
   display: flex;
-  background-color: rgb(45, 45, 214);
+  flex-direction: column;
   justify-content: space-around;
-  margin: 30px 0;
+  margin: 15px 0;
   height: 60px;
   align-items: center;
+}
+
+.secondSection span {
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.secondSection p {
+  font-size: 1.5rem;
+  margin: 20px 40px;
+  display: flex;
 }
